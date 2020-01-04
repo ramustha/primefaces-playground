@@ -1,4 +1,7 @@
-package com.adiwisista.primeface.playground;
+package com.adiwisista.primeface.playground.view;
+
+import com.adiwisista.primeface.playground.History;
+import com.adiwisista.primeface.playground.HistoryService;
 
 import javax.faces.view.ViewScoped;
 import javax.inject.Inject;

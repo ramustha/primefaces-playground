@@ -1,4 +1,8 @@
-package com.adiwisista.primeface.playground;
+package com.adiwisista.primeface.playground.view;
+
+import com.adiwisista.primeface.playground.Account;
+import com.adiwisista.primeface.playground.AccountService;
+import com.adiwisista.primeface.playground.FacesUtil;
 
 import javax.faces.application.FacesMessage;
 import javax.faces.view.ViewScoped;
@@ -46,14 +50,9 @@ public class TableAccountView implements Serializable {
     }
 
     public void transfer() {
-        if (selectedAccount != null
-                && !selectedAccount.getAccountId().equals(accountId)
-                && accountService.isAccountExist(accountId)) {
-
-            Long senderId = selectedAccount.getAccountId();
-            accountService.transfer(senderId, accountId, amount);
-
-            FacesUtil.addMessage("Transfer from " + senderId + " To " + accountId + " " + amount, FacesMessage.SEVERITY_INFO);
+        boolean success = accountService.transfer(selectedAccount, accountId, amount);
+        if (success) {
+            FacesUtil.addMessage("Transfer from " + selectedAccount.getAccountId() + " To " + accountId + " " + amount, FacesMessage.SEVERITY_INFO);
         } else {
             FacesUtil.addMessage("Failed Transfer to " + accountId, FacesMessage.SEVERITY_ERROR);
         }

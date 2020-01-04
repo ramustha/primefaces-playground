@@ -1,5 +1,6 @@
-package com.adiwisista.primeface.playground;
+package com.adiwisista.primeface.playground.view;
 
+import com.adiwisista.primeface.playground.ChartService;
 import org.primefaces.model.chart.Axis;
 import org.primefaces.model.chart.AxisType;
 import org.primefaces.model.chart.BarChartModel;
@@ -15,7 +16,6 @@ import java.io.Serializable;
 @ViewScoped
 public class ChartView implements Serializable {
     private BarChartModel barChartModel;
-    private ChartSeries chartSeries;
 
     @Inject
     private ChartService chartService;
@@ -23,7 +23,8 @@ public class ChartView implements Serializable {
     @PostConstruct
     public void init() {
         barChartModel = new BarChartModel();
-        chartSeries = chartService.getChartSeries();
+
+        ChartSeries chartSeries = chartService.getChartSeries();
         barChartModel.addSeries(chartSeries);
 
         Axis xAxis = barChartModel.getAxis(AxisType.X);

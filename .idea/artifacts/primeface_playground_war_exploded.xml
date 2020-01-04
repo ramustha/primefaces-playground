@@ -64,7 +64,7 @@
           <element id="library" level="project" name="Maven: com.google.errorprone:error_prone_annotations:2.2.0" />
           <element id="library" level="project" name="Maven: com.google.j2objc:j2objc-annotations:1.1" />
           <element id="library" level="project" name="Maven: org.codehaus.mojo:animal-sniffer-annotations:1.17" />
-          <element id="library" level="project" name="Maven: com.github.primefaces:primefaces:master-6_1-g1e058c4-3793" />
+          <element id="library" level="project" name="Maven: com.github.primefaces:primefaces:master-6_1-g0fbe4ee-3795" />
           <element id="library" level="project" name="Maven: org.glassfish:jakarta.faces:2.3.13" />
         </element>
       </element>

@@ -35,51 +35,69 @@ public class AccountService {
         return false;
     }
 
-    public void transfer(Long senderAccountId, Long receivedAccountId, Long amount) {
-        Account senderAccount = null;
-        Account receivedAccount = null;
-        for (Account account : accounts) {
-            if (account.getAccountId().equals(receivedAccountId)) {
-                receivedAccount = account;
+    public boolean transfer(Account selectedAccount, Long receivedAccountId, Long amount) {
+        if (selectedAccount != null
+                && !selectedAccount.getAccountId().equals(receivedAccountId)
+                && isAccountExist(receivedAccountId)
+                && amount != null
+                && amount > 0) {
+
+            Account senderAccount = null;
+            Account receivedAccount = null;
+            for (Account account : accounts) {
+                if (account.getAccountId().equals(receivedAccountId)) {
+                    receivedAccount = account;
+                }
+
+                if (account.getAccountId().equals(selectedAccount.getAccountId())) {
+                    senderAccount = account;
+                }
             }
 
-            if (account.getAccountId().equals(senderAccountId)) {
-                senderAccount = account;
+            if (senderAccount != null) {
+                Long saldoAwal = senderAccount.getSaldo();
+                long saldoAkhir = saldoAwal - amount;
+
+                if (!selectedAccount.isEscrow() && saldoAkhir < 0) {
+                    return false;
+                }
+
+                senderAccount.setSaldo(saldoAkhir);
+
+                accounts.set(accounts.indexOf(senderAccount), senderAccount);
+
+                historyService.addHistory(new History(
+                        senderAccount,
+                        saldoAwal,
+                        null,
+                        amount,
+                        saldoAkhir
+                ));
+
+                chartService.addSeriesData(senderAccount);
             }
-        }
 
-        if (senderAccount != null) {
-            Long saldo = senderAccount.getSaldo();
-            senderAccount.setSaldo(saldo - amount);
+            if (receivedAccount != null) {
+                Long saldoAwal = receivedAccount.getSaldo();
+                long saldoAkhir = saldoAwal + amount;
 
-            accounts.set(accounts.indexOf(senderAccount), senderAccount);
+                receivedAccount.setSaldo(saldoAkhir);
 
-            historyService.addHistory(new History(
-               senderAccount,
-               saldo,
-               amount,
-               null,
-               senderAccount.getSaldo()
-            ));
+                accounts.set(accounts.indexOf(receivedAccount), receivedAccount);
 
-            chartService.addSeriesData(senderAccount);
-        }
+                historyService.addHistory(new History(
+                        receivedAccount,
+                        saldoAwal,
+                        amount,
+                        null,
+                        saldoAkhir
+                ));
 
-        if (receivedAccount != null) {
-            Long saldo = receivedAccount.getSaldo();
-            receivedAccount.setSaldo(saldo + amount);
-
-            accounts.set(accounts.indexOf(receivedAccount), receivedAccount);
-
-            historyService.addHistory(new History(
-                    receivedAccount,
-                    saldo,
-                    null,
-                    amount,
-                    receivedAccount.getSaldo()
-            ));
-
-            chartService.addSeriesData(receivedAccount);
+                chartService.addSeriesData(receivedAccount);
+            }
+            return true;
+        } else {
+            return false;
         }
     }
 

@@ -1,4 +1,8 @@
-package com.adiwisista.primeface.playground;
+package com.adiwisista.primeface.playground.view;
+
+import com.adiwisista.primeface.playground.Account;
+import com.adiwisista.primeface.playground.AccountService;
+import com.adiwisista.primeface.playground.FacesUtil;
 
 import javax.faces.application.FacesMessage;
 import javax.faces.view.ViewScoped;

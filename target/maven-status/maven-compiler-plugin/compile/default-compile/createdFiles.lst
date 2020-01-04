@@ -1,10 +1,10 @@
 com/adiwisista/primeface/playground/History.class
+com/adiwisista/primeface/playground/view/FormAccountView.class
 com/adiwisista/primeface/playground/ChartService.class
+com/adiwisista/primeface/playground/view/TableAccountView.class
 com/adiwisista/primeface/playground/Account.class
 com/adiwisista/primeface/playground/HistoryService.class
 com/adiwisista/primeface/playground/FacesUtil.class
-com/adiwisista/primeface/playground/TableHistoryView.class
-com/adiwisista/primeface/playground/FormAccountView.class
 com/adiwisista/primeface/playground/AccountService.class
-com/adiwisista/primeface/playground/ChartView.class
-com/adiwisista/primeface/playground/TableAccountView.class
+com/adiwisista/primeface/playground/view/ChartView.class
+com/adiwisista/primeface/playground/view/TableHistoryView.class

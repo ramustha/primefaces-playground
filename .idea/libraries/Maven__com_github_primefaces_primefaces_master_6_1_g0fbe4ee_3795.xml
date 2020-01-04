@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.github.primefaces:primefaces:master-6_1-g0fbe4ee-3795">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/primefaces/primefaces/master-6_1-g0fbe4ee-3795/primefaces-master-6_1-g0fbe4ee-3795.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/primefaces/primefaces/master-6_1-g0fbe4ee-3795/primefaces-master-6_1-g0fbe4ee-3795-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/github/primefaces/primefaces/master-6_1-g0fbe4ee-3795/primefaces-master-6_1-g0fbe4ee-3795-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

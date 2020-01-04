@@ -1,5 +1,8 @@
-package com.adiwisista.primeface.playground;
+package com.adiwisista.primeface.playground.view;
 
+import com.adiwisista.primeface.playground.Account;
+import com.adiwisista.primeface.playground.AccountService;
+import com.adiwisista.primeface.playground.FacesUtil;
 import org.primefaces.PrimeFaces;
 
 import javax.annotation.PostConstruct;
@@ -47,9 +50,8 @@ public class FormAccountView implements Serializable {
     }
 
     public void create() {
-        boolean added = accountService.addAccount(account);
-
-        if (added) {
+        boolean success = accountService.addAccount(account);
+        if (success) {
             FacesUtil.addMessage("Saved " + account.getAccountName(), FacesMessage.SEVERITY_INFO);
             reset();
         } else {
