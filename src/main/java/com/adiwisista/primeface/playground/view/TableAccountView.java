@@ -52,7 +52,7 @@ public class TableAccountView implements Serializable {
     public void transfer() {
         boolean success = accountService.transfer(selectedAccount, accountId, amount);
         if (success) {
-            FacesUtil.addMessage("Transfer from " + selectedAccount.getAccountId() + " To " + accountId + " " + amount, FacesMessage.SEVERITY_INFO);
+            FacesUtil.addMessage("Transfer from " + selectedAccount.getId() + " To " + accountId + " " + amount, FacesMessage.SEVERITY_INFO);
         } else {
             FacesUtil.addMessage("Failed Transfer to " + accountId, FacesMessage.SEVERITY_ERROR);
         }

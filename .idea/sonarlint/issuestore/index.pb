@@ -15,9 +15,7 @@ b
 2src/main/webapp/resources/showcase/css/layout.scss,2/3/23267c84b91a352143950c8b2c7f882589a8989a
 n
 >src/main/java/com/adiwisista/primeface/playground/Account.java,1/c/1c522b3d96fbbf10c6ffbca2861d56d33a736236
-w
-Gsrc/main/java/com/adiwisista/primeface/playground/TableAccountView.java,8/8/887de56af328b53378323c37f2217bfa5a84461b
 u
 Esrc/main/java/com/adiwisista/primeface/playground/AccountService.java,5/e/5e88641e0c8610f2cfac1a2066b7257aed4fc411
-v
-Fsrc/main/java/com/adiwisista/primeface/playground/FormAccountView.java,f/2/f2e2693b0250bd6b82670b50ed645f491fc7840f
+q
+Asrc/main/java/com/adiwisista/primeface/playground/RepoConfig.java,2/3/2375fb3b1a6eff55f58f357018f1a656fb5c92af

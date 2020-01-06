@@ -1,16 +1,21 @@
 package com.adiwisista.primeface.playground;
 
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.io.Serializable;
 import java.util.Objects;
 
+@Entity
 public class Account implements Serializable {
-    private Long accountId;
+    @Id
+    private Long id;
     private String accountName;
     private boolean isEscrow;
     private long saldo;
 
-    public Account(Long accountId, String accountName, boolean isEscrow, long saldo) {
-        this.accountId = accountId;
+    public Account(Long id, String accountName, boolean isEscrow, long saldo) {
+        this.id = id;
         this.accountName = accountName;
         this.isEscrow = isEscrow;
         this.saldo = saldo;
@@ -19,8 +24,8 @@ public class Account implements Serializable {
     public Account() {
     }
 
-    public Long getAccountId() {
-        return accountId;
+    public Long getId() {
+        return id;
     }
 
     public String getAccountName() {
@@ -35,8 +40,8 @@ public class Account implements Serializable {
         return saldo;
     }
 
-    public void setAccountId(Long accountId) {
-        this.accountId = accountId;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public void setAccountName(String accountName) {
@@ -52,7 +57,7 @@ public class Account implements Serializable {
     }
 
     public void reset() {
-        accountId = null;
+        id = null;
         accountName = null;
         isEscrow = false;
     }
@@ -62,18 +67,18 @@ public class Account implements Serializable {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Account account = (Account) o;
-        return accountId.equals(account.accountId);
+        return id.equals(account.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(accountId);
+        return Objects.hash(id);
     }
 
     @Override
     public String toString() {
         return "Account{" +
-                "accountId='" + accountId + '\'' +
+                "id='" + id + '\'' +
                 ", accountName='" + accountName + '\'' +
                 ", isEscrow=" + isEscrow +
                 ", saldo=" + saldo +

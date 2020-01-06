@@ -70,7 +70,7 @@
 
                             <p:dataTable id="accountTable" widgetVar="accountTable" var="account" value="#{tableAccountView.accounts}">
                                 <p:column headerText="Account Id">
-                                    <h:outputText value="#{account.accountId}" />
+                                    <h:outputText value="#{account.id}" />
                                 </p:column>
 
                                 <p:column headerText="Account Name">
@@ -126,7 +126,7 @@
                                 </p:column>
 
                                 <p:column headerText="Account Name[ID]">
-                                    <h:outputText value="#{history.account.accountName}[#{history.account.accountId}]" />
+                                    <h:outputText value="#{history.accountName}[#{history.accountId}]" />
                                 </p:column>
 
                                 <p:column headerText="Saldo Awal">

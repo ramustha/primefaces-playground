@@ -1,0 +1,165 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+                xmlns:h="http://java.sun.com/jsf/html"
+                xmlns:ui="http://java.sun.com/jsf/facelets"
+                xmlns:f="http://xmlns.jcp.org/jsf/core"
+                xmlns:p="http://primefaces.org/ui"
+                template="/WEB-INF/template.xhtml">
+
+    <ui:define name="head">
+        <style type="text/css">
+            .box,
+            .box-layout > div {
+                /*background-color: #cce4f7;*/
+                text-align: center;
+                padding-top: 1em;
+                padding-bottom: 1em;
+                /*border-radius: 4px;*/
+                /*color: #30383c;*/
+            }
+
+            .box-stretched {
+                height: 100%;
+                box-sizing: border-box;
+            }
+        </style>
+    </ui:define>
+
+    <ui:define name="content">
+        <div class="homepage">
+
+            <div class="p-grid">
+                <div class="p-col">
+                    <div class="box box-stretched">
+
+                        <h:form id="form1">
+                            <p:panel id="panel" header="Form" style="margin-bottom:10px;">
+
+                                <p:growl id="createMsg" />
+
+                                <h:panelGrid columns="2" cellpadding="5">
+                                    <h:outputLabel for="id" value="Account ID:" />
+                                    <p:inputText id="id" required="true" type="number" label="Account ID" value="#{formAccountView.accountId}" />
+
+                                    <h:outputLabel for="name" value="Account Name:" />
+                                    <p:inputText id="name" required="true" label="Account Name" value="#{formAccountView.accountName}" />
+
+                                    <h:outputLabel for="escrow" value="Escrow:" />
+                                    <p:inputSwitch id="escrow" value="#{formAccountView.escrow}" />
+                                </h:panelGrid>
+
+                                <p:commandButton value="Create"
+                                                 update="form1 form2"
+                                                 action="#{formAccountView.create}"
+                                                 style="margin-right:20px;"
+                                                 styleClass="ui-priority-primary" />
+
+                                <p:commandButton value="Reset"
+                                                 update="panel"
+                                                 action="#{formAccountView.reset}"
+                                                 styleClass="ui-priority-primary" />
+                            </p:panel>
+                        </h:form>
+
+                    </div>
+                </div>
+                <div class="p-col">
+                    <div class="box box-stretched">
+
+                        <h:form id="form2">
+                            <p:growl id="transferMsg" />
+
+                            <p:dataTable id="accountTable" widgetVar="accountTable" var="account" value="#{tableAccountView.accounts}">
+                                <p:column headerText="Account Id">
+                                    <h:outputText value="#{account.accountId}" />
+                                </p:column>
+
+                                <p:column headerText="Account Name">
+                                    <h:outputText value="#{account.accountName}" />
+                                </p:column>
+
+                                <p:column headerText="Escrow">
+                                    <h:outputText value="#{account.escrow}" />
+                                </p:column>
+
+                                <p:column headerText="Saldo">
+                                    <h:outputText value="#{account.saldo}" />
+                                </p:column>
+
+                                <p:column style="width:32px;text-align: center">
+                                    <p:commandButton process="@this" update=":form2:transferDetail" oncomplete="PF('transferDialog').show()" icon="pi pi-search" title="View">
+                                        <f:setPropertyActionListener value="#{account}" target="#{tableAccountView.selectedAccount}" />
+                                    </p:commandButton>
+                                </p:column>
+                            </p:dataTable>
+
+                            <p:dialog header="Transfer Dialog" widgetVar="transferDialog" modal="true">
+                                <p:outputPanel id="transferDetail" style="text-align:center;">
+                                    <h:panelGrid columns="2" cellpadding="5">
+                                        <h:outputLabel for="tujuan" value="Rekening Tujuan:" />
+                                        <p:inputText id="tujuan" type="number" required="true" label="Rekening Tujuan" value="#{tableAccountView.accountId}" />
+
+                                        <h:outputLabel for="amount" value="Amount Transfer:" />
+                                        <p:inputText id="amount" type="number" required="true" label="Amount Transfer" value="#{tableAccountView.amount}" />
+                                    </h:panelGrid>
+
+                                    <p:commandButton value="Transfer"
+                                                     update="form2 form3 form4 transferMsg"
+                                                     action="#{tableAccountView.transfer}"
+                                                     onsuccess="PF('transferDialog').hide();"
+                                                     style="margin-right:20px;"
+                                                     styleClass="ui-priority-primary" />
+                                </p:outputPanel>
+                            </p:dialog>
+                        </h:form>
+
+                    </div>
+                </div>
+            </div>
+            <div class="p-grid">
+                <div class="p-col">
+                    <div class="box box-stretched">
+
+                        <h:form id="form3">
+                            <p:dataTable id="historyTable" widgetVar="historyTable" var="history" value="#{tableHistoryView.histories}">
+                                <p:column headerText="DateTime">
+                                    <h:outputText value="#{history.dateTime}" />
+                                </p:column>
+
+                                <p:column headerText="Account Name[ID]">
+                                    <h:outputText value="#{history.account.accountName}[#{history.account.accountId}]" />
+                                </p:column>
+
+                                <p:column headerText="Saldo Awal">
+                                    <h:outputText value="#{history.saldoAwal}" />
+                                </p:column>
+
+                                <p:column headerText="Debet">
+                                    <h:outputText value="#{history.debet}" />
+                                </p:column>
+
+                                <p:column headerText="Kredit">
+                                    <h:outputText value="#{history.kredit}" />
+                                </p:column>
+
+                                <p:column headerText="Saldo Akhir">
+                                    <h:outputText value="#{history.saldoAkhir}" />
+                                </p:column>
+                            </p:dataTable>
+                        </h:form>
+
+                    </div>
+                </div>
+                <div class="p-col">
+                    <div class="box box-stretched">
+
+                        <h:form id="form4">
+                            <p:chart type="bar" model="#{chartView.barChartModel}" style="height:300px" />
+                        </h:form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ui:define>
+
+</ui:composition>

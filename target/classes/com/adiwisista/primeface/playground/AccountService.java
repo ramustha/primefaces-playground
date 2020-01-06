@@ -1,5 +1,7 @@
 package com.adiwisista.primeface.playground;
 
+import com.adiwisista.primeface.playground.repository.AccountRepository;
+
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
@@ -16,10 +18,14 @@ public class AccountService {
     private HistoryService historyService;
     @Inject
     private ChartService chartService;
+    @Inject
+    private AccountRepository accountRepository;
 
     @PostConstruct
     public void init() {
         accounts = new ArrayList<>();
+
+        accounts.addAll(accountRepository.findAll());
     }
 
     public List<Account> getAccounts() {
@@ -28,7 +34,7 @@ public class AccountService {
 
     public boolean isAccountExist(Long receivedAccountId) {
         for (Account account : accounts) {
-            if (account.getAccountId().equals(receivedAccountId)) {
+            if (account.getId().equals(receivedAccountId)) {
                 return true;
             }
         }
@@ -37,7 +43,7 @@ public class AccountService {
 
     public boolean transfer(Account selectedAccount, Long receivedAccountId, Long amount) {
         if (selectedAccount != null
-                && !selectedAccount.getAccountId().equals(receivedAccountId)
+                && !selectedAccount.getId().equals(receivedAccountId)
                 && isAccountExist(receivedAccountId)
                 && amount != null
                 && amount > 0) {
@@ -45,11 +51,11 @@ public class AccountService {
             Account senderAccount = null;
             Account receivedAccount = null;
             for (Account account : accounts) {
-                if (account.getAccountId().equals(receivedAccountId)) {
+                if (account.getId().equals(receivedAccountId)) {
                     receivedAccount = account;
                 }
 
-                if (account.getAccountId().equals(selectedAccount.getAccountId())) {
+                if (account.getId().equals(selectedAccount.getId())) {
                     senderAccount = account;
                 }
             }
@@ -65,6 +71,7 @@ public class AccountService {
                 senderAccount.setSaldo(saldoAkhir);
 
                 accounts.set(accounts.indexOf(senderAccount), senderAccount);
+                accountRepository.save(senderAccount);
 
                 historyService.addHistory(new History(
                         senderAccount,
@@ -84,6 +91,7 @@ public class AccountService {
                 receivedAccount.setSaldo(saldoAkhir);
 
                 accounts.set(accounts.indexOf(receivedAccount), receivedAccount);
+                accountRepository.save(receivedAccount);
 
                 historyService.addHistory(new History(
                         receivedAccount,
@@ -103,7 +111,7 @@ public class AccountService {
 
     public boolean addAccount(Account account) {
         Account newAccount = new Account(
-                account.getAccountId(),
+                account.getId(),
                 account.getAccountName(),
                 account.isEscrow(),
                 0
@@ -112,6 +120,8 @@ public class AccountService {
         if (accounts.contains(newAccount)) {
             return false;
         }
+
+        accountRepository.save(account);
         return accounts.add(newAccount);
     }
 }

@@ -2,28 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abb72f6f-ba0a-4bbb-bb2b-6afbf9514a0b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_10_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_1_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/3/2375fb3b1a6eff55f58f357018f1a656fb5c92af" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/primeface_playground_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/primeface_playground_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_primefaces_primefaces_master_6_1_g1e058c4_3793.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_primefaces_primefaces_master_6_1_g0fbe4ee_3795.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_0_8_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_0_1_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_10_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_1_GA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c522b3d96fbbf10c6ffbca2861d56d33a736236" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/c/1c522b3d96fbbf10c6ffbca2861d56d33a736236" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/8/887de56af328b53378323c37f2217bfa5a84461b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/2/f2e2693b0250bd6b82670b50ed645f491fc7840f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/primeface-playground.iml" beforeDir="false" afterPath="$PROJECT_DIR$/primeface-playground.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adiwisista/primeface/playground/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adiwisista/primeface/playground/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/adiwisista/primeface/playground/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adiwisista/primeface/playground/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adiwisista/primeface/playground/ChartView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adiwisista/primeface/playground/view/ChartView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adiwisista/primeface/playground/FormAccountView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adiwisista/primeface/playground/view/FormAccountView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adiwisista/primeface/playground/TableAccountView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adiwisista/primeface/playground/view/TableAccountView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/adiwisista/primeface/playground/TableHistoryView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adiwisista/primeface/playground/view/TableHistoryView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adiwisista/primeface/playground/ChartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adiwisista/primeface/playground/ChartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adiwisista/primeface/playground/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adiwisista/primeface/playground/History.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adiwisista/primeface/playground/HistoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adiwisista/primeface/playground/HistoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adiwisista/primeface/playground/view/FormAccountView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adiwisista/primeface/playground/view/FormAccountView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adiwisista/primeface/playground/view/TableAccountView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/adiwisista/primeface/playground/view/TableAccountView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xhtml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/Account.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/Account.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/AccountService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/AccountService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/Car.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/CarService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/ChartView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/FormAccountView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/SelectionView.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/TableAccountView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/TableAccountView.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/TableAccountView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/TableHistoryView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/Transfer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/TransferService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/ChartService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/ChartService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/ChartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/ChartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/ChartView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/FormAccountView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/History.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/History.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/History.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/HistoryService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/HistoryService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/HistoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/HistoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/TableAccountView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/TableHistoryView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/view/FormAccountView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/view/FormAccountView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/view/FormAccountView.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/view/FormAccountView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/view/TableAccountView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/view/TableAccountView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/view/TableAccountView.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/adiwisista/primeface/playground/view/TableAccountView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
@@ -31,6 +67,20 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -57,28 +107,32 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.51623034" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.adiwisista.primeface.playground" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
   <component name="RunManager">
@@ -135,7 +189,9 @@
       <workItem from="1577953119351" duration="685000" />
       <workItem from="1577957601963" duration="13907000" />
       <workItem from="1578024422671" duration="20040000" />
-      <workItem from="1578122156609" duration="1607000" />
+      <workItem from="1578122156609" duration="3681000" />
+      <workItem from="1578274265324" duration="1320000" />
+      <workItem from="1578275638827" duration="10190000" />
     </task>
     <servers />
   </component>
@@ -147,69 +203,89 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="555" y="200" width="800" height="672" key="#Inspections/0.0.1920.1080@0.0.1920.1080" timestamp="1578048057217" />
-    <state x="418" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578123766033">
+    <state x="549" y="198" width="800" height="672" key="#Jetty_Server" timestamp="1578124767914">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="418" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578123766033" />
-    <state x="768" y="243" width="526" height="587" key="#com.intellij.ide.util.MemberChooser" timestamp="1578048738197">
+    <state x="549" y="198" width="800" height="672" key="#Jetty_Server/0.0.1920.1080@0.0.1920.1080" timestamp="1578124767914" />
+    <state x="231" y="200" width="1124" height="672" key="#Project_Structure" timestamp="1578278229639">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="768" y="243" width="526" height="587" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1578048738197" />
+    <state x="231" y="200" width="1124" height="672" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1578278229639" />
+    <state x="568" y="375" width="800" height="672" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578276817946">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="568" y="375" width="800" height="672" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578276817946" />
+    <state x="768" y="243" width="526" height="587" key="#com.intellij.ide.util.MemberChooser" timestamp="1578284435176">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="768" y="243" width="526" height="587" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1578284435176" />
     <state x="622" y="0" width="657" height="1075" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1578046968624">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="622" y="0" width="657" height="1075" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578046968624" />
-    <state x="693" y="288" width="524" height="496" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1577958095329">
+    <state x="693" y="288" width="524" height="496" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1578279049414">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="693" y="288" width="524" height="496" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577958095329" />
-    <state x="743" y="297" width="424" height="479" key="FileChooserDialogImpl" timestamp="1577949141772">
+    <state x="693" y="288" width="524" height="496" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578279049414" />
+    <state x="100" y="99" width="1720" height="880" key="DiffContextDialog" timestamp="1578277916457">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="743" y="297" width="424" height="479" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1577949141772" />
-    <state width="1878" height="282" key="GridCell.Tab.0.bottom" timestamp="1578123711151">
+    <state x="100" y="99" width="1720" height="880" key="DiffContextDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1578277916457" />
+    <state x="743" y="297" width="424" height="479" key="FileChooserDialogImpl" timestamp="1578124777096">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578123711151" />
-    <state width="1878" height="282" key="GridCell.Tab.0.center" timestamp="1578123711150">
+    <state x="743" y="297" width="424" height="479" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1578124777096" />
+    <state width="1878" height="389" key="GridCell.Tab.0.bottom" timestamp="1578286048250">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="282" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578123711150" />
-    <state width="1878" height="282" key="GridCell.Tab.0.left" timestamp="1578123711150">
+    <state width="1878" height="389" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578286048250" />
+    <state width="1878" height="389" key="GridCell.Tab.0.center" timestamp="1578286048249">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="282" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578123711150" />
-    <state width="1878" height="282" key="GridCell.Tab.0.right" timestamp="1578123711151">
+    <state width="1878" height="389" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578286048249" />
+    <state width="1878" height="389" key="GridCell.Tab.0.left" timestamp="1578286048249">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="282" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578123711151" />
-    <state width="1878" height="348" key="GridCell.Tab.1.bottom" timestamp="1578122844484">
+    <state width="1878" height="389" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578286048249" />
+    <state width="1878" height="389" key="GridCell.Tab.0.right" timestamp="1578286048249">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578122844484" />
-    <state width="1878" height="348" key="GridCell.Tab.1.center" timestamp="1578122844484">
+    <state width="1878" height="389" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578286048249" />
+    <state width="1878" height="293" key="GridCell.Tab.1.bottom" timestamp="1578284339334">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="348" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578122844484" />
-    <state width="1878" height="348" key="GridCell.Tab.1.left" timestamp="1578122844484">
+    <state width="1878" height="293" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1578284339334" />
+    <state width="1878" height="293" key="GridCell.Tab.1.center" timestamp="1578284339333">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="348" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578122844484" />
-    <state width="1878" height="348" key="GridCell.Tab.1.right" timestamp="1578122844484">
+    <state width="1878" height="293" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1578284339333" />
+    <state width="1878" height="293" key="GridCell.Tab.1.left" timestamp="1578284339333">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="348" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578122844484" />
+    <state width="1878" height="293" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1578284339333" />
+    <state width="1878" height="293" key="GridCell.Tab.1.right" timestamp="1578284339334">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="293" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1578284339334" />
     <state x="667" y="264" width="575" height="545" key="RollbackChangesDialog" timestamp="1577960343221">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="667" y="264" width="575" height="545" key="RollbackChangesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1577960343221" />
+    <state x="443" y="116" width="1024" height="840" key="SettingsEditor" timestamp="1578275900851">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="443" y="116" width="1024" height="840" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1578275900851" />
     <state x="614" y="279" width="692" height="520" key="find.popup" timestamp="1577962365909">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="614" y="279" width="692" height="520" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1577962365909" />
-    <state x="624" y="187" width="670" height="676" key="search.everywhere.popup" timestamp="1577951442758">
+    <state x="287" y="114" width="1335" height="845" key="new project wizard" timestamp="1578124827105">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="624" y="187" width="670" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1577951442758" />
+    <state x="287" y="114" width="1335" height="845" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1578124827105" />
+    <state x="624" y="187" width="672" height="676" key="search.everywhere.popup" timestamp="1578279613520">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="624" y="187" width="672" height="676" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1578279613519" />
   </component>
 </project>

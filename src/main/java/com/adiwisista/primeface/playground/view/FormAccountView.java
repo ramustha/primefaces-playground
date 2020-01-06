@@ -26,7 +26,7 @@ public class FormAccountView implements Serializable {
     }
 
     public Long getAccountId() {
-        return account.getAccountId();
+        return account.getId();
     }
 
     public String getAccountName() {
@@ -38,7 +38,7 @@ public class FormAccountView implements Serializable {
     }
 
     public void setAccountId(Long accountId) {
-        account.setAccountId(accountId);
+        account.setId(accountId);
     }
 
     public void setAccountName(String accountName) {

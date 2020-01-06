@@ -22,6 +22,6 @@ public class ChartService {
     }
 
     public void addSeriesData(Account account) {
-        chartSeries.set(account.getAccountName() + "[" + account.getAccountId() + "]", account.getSaldo());
+        chartSeries.set(account.getAccountName() + "[" + account.getId() + "]", account.getSaldo());
     }
 }

@@ -1,0 +1,9 @@
+<hibernate-mapping>
+    <class name="com.adiwisista.primeface.playground.Account" table="account">
+        <id column="id" name="id" type="long"/>
+        <property column="account_name" length="100" name="accountName" not-null="true" type="string"/>
+        <property column="escrow" name="escrow" type="boolean"/>
+        <property column="saldo" name="saldo" not-null="true" type="long"/>
+
+    </class>
+</hibernate-mapping>

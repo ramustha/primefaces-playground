@@ -11,7 +11,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <owasp-sanitizer.version>20190610.1</owasp-sanitizer.version>
         <owb.version>2.0.12</owb.version>
-        <hibernate-validator.version>5.0.1.Final</hibernate-validator.version>
+        <hibernate-validator.version>6.1.0.Final</hibernate-validator.version>
+        <hibernate-core.version>5.4.10.Final</hibernate-core.version>
         <poi.version>4.1.1</poi.version>
         <mojarra.version>2.3.13</mojarra.version>
         <myfaces.version>2.3.5</myfaces.version>
@@ -37,6 +38,18 @@
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
             <version>${hibernate-validator.version}</version>
+        </dependency>
+
+        <!-- Repositories -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate-core.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.2.8</version>
         </dependency>
 
         <!-- CDI required APIs -->
