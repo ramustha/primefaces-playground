@@ -76,8 +76,8 @@ public class AccountService {
                 historyService.addHistory(new History(
                         senderAccount,
                         saldoAwal,
-                        null,
                         amount,
+                        null,
                         saldoAkhir
                 ));
 
@@ -96,8 +96,8 @@ public class AccountService {
                 historyService.addHistory(new History(
                         receivedAccount,
                         saldoAwal,
-                        amount,
                         null,
+                        amount,
                         saldoAkhir
                 ));
 
